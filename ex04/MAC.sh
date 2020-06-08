@@ -1,1 +1,1 @@
-ifconfig -a|grep netmask|awk -F 'netmask' '{print $2}'|cut -d ' ' -f2
+ifconfig -a |grep "ether " | cut -d " " -f2

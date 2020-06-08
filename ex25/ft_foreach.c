@@ -1,28 +1,23 @@
-#include <stdio.h>
-#include <unistd.h>
-void	ft_putnbr(int x)
-{
-  char res;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lstepany <lstepany@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/03 23:10:09 by lstepany          #+#    #+#             */
+/*   Updated: 2020/06/03 23:23:21 by lstepany         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-  res = x + 48;
-  write(1, &res, 1);
-}
-
-void	ft_foreach(int *tab, int length, void(*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-  int i;
+	int i;
 
-  i = 0;
-  while(i < length)
-    {
-      f(tab[i]);
-      i++;
-    }
-}
-int	main(void)
-{
-  int tab[5] = {1, 0, 0, 4, 5};
-  ft_foreach(tab, 5, &ft_putnbr);
-  write(1, "\n", 1);
-  return(0);
+	i = 0;
+	while (i < length)
+	{
+		f(tab[i]);
+		i++;
+	}
 }

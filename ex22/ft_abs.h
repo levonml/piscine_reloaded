@@ -1,16 +1,17 @@
-#ifndef FT_ABS_H
-#define FT_ABS_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lstepany <lstepany@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/03 22:45:37 by lstepany          #+#    #+#             */
+/*   Updated: 2020/06/03 22:45:40 by lstepany         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#define  ABS(Value)		\
-  ({int a;		\
-  if(Value < 0)		\
-    {			\
-      a = -Value;		\
-    }			\
-  else			\
-    {			\
-      a = Value;		\
-    }			\
-  a;			\
-  })
+#ifndef FT_ABS_H
+# define FT_ABS_H
+
+# define ABS(Value) ({int a; if(Value < 0) {a = -Value;} else {a = Value;} a;})
 #endif

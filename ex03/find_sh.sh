@@ -1,1 +1,1 @@
-find . -name "*.sh" | rev | cut -c 4-100 | rev
+find . -name "*.sh" | rev| cut -d"/" -f1 |rev | sed s'/.sh$//'

@@ -1,22 +1,22 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lstepany <lstepany@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/03 11:56:43 by lstepany          #+#    #+#             */
+/*   Updated: 2020/06/03 11:57:42 by lstepany         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_swap(int *a, int *b)
 {
-  int c;
-  c = *a;
-  *a = *b;
-  *b = c;
-  
-}
-int	main(void)
-{
-  int x;
-  int y;
+	int c;
 
-  x = 'X';
-  y = 'Y';
-  ft_swap(&x, &y);
-  printf("the value of x is %c\n", x);
-  printf("the value of y is %c\n", y); 
-  return(0);
+	c = *a;
+	*a = *b;
+	*b = c;
 }
